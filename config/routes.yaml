@@ -1,0 +1,34 @@
+homepage:
+ path: /
+ controller: App\Controller\IndexController::home
+
+app_article_save:
+    path: /article/save
+    controller: App\Controller\IndexController::save
+    methods: [GET, POST] 
+
+
+
+app_new_article:
+    path: /article/new
+    controller: App\Controller\IndexController::new
+    methods: [GET, POST]
+
+article_show:
+    path: /article/{id}
+    controller: App\Controller\IndexController::show
+
+article_edit:
+    path: /article/edit/{id}
+    controller: App\Controller\IndexController::edit
+    methods: ['GET', 'POST']
+
+article_delete:
+    path: /article/delete/{id}
+    controller: App\Controller\IndexController::delete
+    methods: ['DELETE','GET']
+
+new_category:
+    path: /category/newCat
+    controller: App\Controller\IndexController::newCategory
+    methods: [GET, POST]
